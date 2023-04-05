@@ -9,6 +9,8 @@
 ==========================================
 </pre>
 
+>> This repo is cloned from pnnl/arena to try its implementation.
+
 The next generation high-performance computing (HPC) platform is likely to be reconfigurable and data-centric due to the trend of hardware specialization and the emergence of data-driven applications. ARENA is an asynchronous reconfigurable accel- erator ring architecture as a selective solution on how the future HPC cluster will be like. Despite using the coarse-grained reconfigurable arrays (CGRAs) as the substrate platform, our key contribution is not only the static dataflow CGRA design itself, but the ensemble of a new architecture and programming model that enables the asynchronous tasking across a cluster of reconfigurable nodes, so as to bring specialized computation to the data rather than the reverse. We presume distributed data storage, but do not assert any prior knowledge about the exact distribution. Alternatively, hardware specialization for a particular task occurs at runtime when a task verifies the majority of its data are locally available in the present node. In other words, we bring accelerators to their data. The hardware specialization is handled by our high-efficient, fast-configurable CGRAs, while the asynchronous tasking for bring computation to data is achieved by circulating the task token, which describes the dataflow graphs to be executed for a task, among the CGRA cluster connected by a fast ring network.
 
 
